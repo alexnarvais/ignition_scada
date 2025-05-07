@@ -1,4 +1,9 @@
-## Console Script to Check Electrical Monthly Report
+# Ignition Designer Console Scripts
+1. Electrical Meter
+2. Chilled Water Meter
+
+___
+## Electrical Monthly Report
 ```python
 start_date = system.date.getDate(2025, 3, 2)
 end_date = system.date.setTime(system.date.getDate(2025, 3, 30), 23, 59, 59)

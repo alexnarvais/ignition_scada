@@ -1,9 +1,17 @@
 # Ignition Designer Console Scripts
-1. Electrical Meter
-2. Chilled Water Meter
+The following console scripts are used to check the utility metering reports.  
+Copy and paste the following code into a console to run the scripts
+and comment the appropriate code for the meter you are checking.  
+The gateway communication in the designer will need to be changed to full read/write.  
+___
+1. [Electrical Meters](#electrical-meters)
+2. [Chilled Water Meters](#chilled-water-meters)
+3. [Domestic Water Meters](#domestic-water-meters)
+4. [Steam Meters](#steam-meters)
+5. [Fuel Meters](#fuel-meters)
 
 ___
-## Electrical Monthly Report
+## Electrical Meters
 ```python
 start_date = system.date.getDate(2025, 3, 2)
 end_date = system.date.setTime(system.date.getDate(2025, 3, 30), 23, 59, 59)
@@ -103,7 +111,7 @@ electrical_meter = alcon.energy_metering.Electrical()
 ```
 ___
 
-## Console Script to Check Chilled Water Monthly Report
+## Chilled Water Meters
 ```python
 start_date = system.date.getDate(2025, 3, 2)
 end_date = system.date.setTime(system.date.getDate(2025, 3, 30), 23, 59, 59)
@@ -203,7 +211,7 @@ chilled_water_meter = alcon.energy_metering.ChilledWater()
 ```
 ___
 
-## Console Script to Check Domestic Water Monthly Report
+## Domestic Water Meters
 ```python
 start_date = system.date.getDate(2025, 3, 2)
 end_date = system.date.setTime(system.date.getDate(2025, 3, 30), 23, 59, 59)
@@ -303,7 +311,7 @@ domestic_water_meter = alcon.energy_metering.DomesticWater()
 ```
 ___
 
-## Console Script to Check Steam Monthly Report
+## Steam Meters
 ```python
 start_date = system.date.getDate(2025, 3, 2)
 end_date = system.date.setTime(system.date.getDate(2025, 3, 30), 23, 59, 59)
@@ -402,7 +410,7 @@ print("-"*100)
 ```
 ___
 
+## Fuel Meters
 
-
-
+**FUTURE WORK**
     	
